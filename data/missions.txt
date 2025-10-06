@@ -1,3 +1,31 @@
+mission "cheater: startup"
+	landing
+	on offer
+		conversation
+			"Woah! Did you know you have the Cheater plugin enabled?"
+			label "start"
+			"	For as long as you have this plugin enabled, you will have access to the cheater system whether you decide to use it or not."
+			"	Lucky for you, this plugin is made to be unobtrusive to ordinary gameplay while still being quite a powerful tool. That means you can use it when you want to, and ignore it when you don't."
+			"	This is your opportunity to choose how present the Cheater plugin should be in this save."
+			"	- Maximum credits given."
+				to display
+					"credits" > 9e17
+			choice
+				"	(Give maximum credits.)"
+					to display
+						"credits" < 9e17
+					goto "maximumCredits"
+				"	(Exit.)"
+					decline
+			#---------------------------------------------------
+			label "maximumCredits"
+			action
+				payment -9e18
+			action
+				payment 9e18
+			"Woah! Did you know you have the Cheater plugin enabled?"
+				goto "start"
+			#---------------------------------------------------
 mission "cheater: utilities"
 	name "Cheater Utilities"
 	description "Accept this 'job' to open a utilities menu for the Cheater plugin."
@@ -8,19 +36,24 @@ mission "cheater: utilities"
 	on accept
 		conversation
 			"These are utilities for the Cheater plugin."
-			label "menu"
+			label "start"
 			choice
 				#---------------------------------------------------
-				"ship variants: disabled"
+				"	(Enable ship variants in shop.)"
 					to display
 						not "cheater: ship variants in shop"
 					goto "variantsEnable"
-				"ship variants: enabled"
+				"	(Disable ship variants in shop.)"
 					to display
 						has "cheater: ship variants in shop"
 					goto "variantsDisable"
 				#---------------------------------------------------
-				"(Exit.)"
+				"	(Give maximum credits.)"
+					to display
+						"credits" < 9e17
+					goto "maximumCredits"
+				#---------------------------------------------------
+				"	(Exit.)"
 					launch
 			#---------------------------------------------------
 			label "variantsEnable"
@@ -28,13 +61,21 @@ mission "cheater: utilities"
 				set "cheater: ship variants in shop"
 				event "cheater: variantsEnable"
 			"These are utilities for the Cheater plugin."
-				goto "menu"
+				goto "start"
 			label "variantsDisable"
 			action
 				clear "cheater: ship variants in shop"
 				event "cheater: variantsDisable"
 			"These are utilities for the Cheater plugin."
-				goto "menu"
+				goto "start"
+			#---------------------------------------------------
+			label "maximumCredits"
+			action
+				payment -9e18
+			action
+				payment 9e18
+			"These are utilities for the Cheater plugin."
+				goto "start"
 			#---------------------------------------------------
 	on daily
 		fail
