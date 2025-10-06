@@ -8,8 +8,9 @@ mission "cheater: utilities"
 	on accept
 		conversation
 			"These are utilities for the Cheater plugin."
-			label "menuVariants"
+			label "menu"
 			choice
+				#---------------------------------------------------
 				"ship variants: disabled"
 					to display
 						not "cheater: ship variants in shop"
@@ -18,20 +19,23 @@ mission "cheater: utilities"
 					to display
 						has "cheater: ship variants in shop"
 					goto "variantsDisable"
+				#---------------------------------------------------
 				"(Exit.)"
 					launch
+			#---------------------------------------------------
 			label "variantsEnable"
 			action
 				set "cheater: ship variants in shop"
 				event "cheater: variantsEnable"
 			"These are utilities for the Cheater plugin."
-				goto "menuVariants"
+				goto "menu"
 			label "variantsDisable"
 			action
 				clear "cheater: ship variants in shop"
 				event "cheater: variantsDisable"
 			"These are utilities for the Cheater plugin."
-				goto "menuVariants"
+				goto "menu"
+			#---------------------------------------------------
 	on daily
 		fail
 event "cheater: variantsEnable"
