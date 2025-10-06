@@ -10,11 +10,11 @@ mission "cheater: utilities"
 			"These are utilities for the Cheater plugin."
 			label "menuVariants"
 			choice
-				"Disabled: ship variants in shop"
+				"ship variants: disabled"
 					to display
 						not "cheater: ship variants in shop"
 					goto "variantsEnable"
-				"Enabled: ship variants in shop"
+				"ship variants: enabled"
 					to display
 						has "cheater: ship variants in shop"
 					goto "variantsDisable"
