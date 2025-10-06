@@ -1,5 +1,6 @@
 mission "cheater: startup"
 	landing
+	"offer precedence" 1
 	on offer
 		conversation
 			"Woah! Did you know you have the Cheater plugin enabled?"
