@@ -32,6 +32,8 @@ mission "cheater: utilities"
 				event "cheater: variantsDisable"
 			"These are utilities for the Cheater plugin."
 				goto "menuVariants"
+	on daily
+		fail
 event "cheater: variantsEnable"
 	planet "cheater: shop"
 		add shipyard "cheater: everything variant"
