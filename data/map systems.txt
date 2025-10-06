@@ -1,0 +1,14 @@
+galaxy "cheater"
+	pos 2000 22
+	sprite "map/danobus"
+system "Cheater"
+	pos 2000 22
+	government "Cheater"
+	object "cheater: wormhole"
+		sprite "planet/cheater wormhole"
+	object "cheater: shop"
+		distance 1000
+		sprite "star/nova-core"
+system "Rutilicus"
+	add object "cheater: wormhole"
+		sprite "planet/cheater wormhole"

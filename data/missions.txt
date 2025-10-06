@@ -1,0 +1,40 @@
+mission "cheater: settings"
+	name "Settings: Cheater"
+	description "Accept this 'job' to open settings for the Cheater plugin."
+	color unselected "governments: Quarg"
+	color selected "governments: Quarg"
+	job
+	repeat
+	on accept
+		conversation
+			"These are the settings for the Cheater plugin."
+			label "menuVariants"
+			choice
+				"Disabled: ship variants in shop"
+					to display
+						not "cheater: ship variants in shop"
+					goto "variantsEnable"
+				"Enabled: ship variants in shop"
+					to display
+						has "cheater: ship variants in shop"
+					goto "variantsDisable"
+				"(Exit.)"
+					launch
+			label "variantsEnable"
+			action
+				set "cheater: ship variants in shop"
+				event "cheater: variantsEnable"
+			"These are the settings for the Cheater plugin."
+				goto "menuVariants"
+			label "variantsDisable"
+			action
+				clear "cheater: ship variants in shop"
+				event "cheater: variantsDisable"
+			"These are the settings for the Cheater plugin."
+				goto "menuVariants"
+event "cheater: variantsEnable"
+	planet "cheater: shop"
+		add shipyard "cheater: everything variant"
+event "cheater: variantsDisable"
+	planet "cheater: shop"
+		remove shipyard "cheater: everything variant"

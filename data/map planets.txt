@@ -1,0 +1,17 @@
+planet "cheater: shop"
+	"display name" "Shop"
+	landscape "land/galaxy"
+	description ""
+	port " "
+		recharges all
+		services all
+	bribe 0
+	outfitter "cheater: everything"
+	shipyard "cheater: everything base"
+planet "cheater: wormhole"
+	wormhole "cheater: wormhole"
+wormhole "cheater: wormhole"
+	"display name" "Cheater"
+	color "governments: Quarg"
+	link "Rutilicus" "Cheater"
+	link "Cheater" "Rutilicus"

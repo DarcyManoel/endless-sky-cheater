@@ -1,0 +1,13 @@
+interface "menu background"
+	sprite "_menu/g5"
+		center 0 -280
+	sprite "_menu/forest2"
+		center 0 280
+	sprite "_menu/oberon"
+		center 140 180
+	sprite "_menu/compass"
+		center 0 0
+	sprite "_menu/title"
+		center 0 -200
+	sprite "_menu/cheater"
+		center 120 -170
