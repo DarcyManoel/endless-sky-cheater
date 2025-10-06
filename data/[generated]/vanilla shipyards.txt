@@ -1,3 +1,4 @@
+#	this text was generated using endless-sky-generator on github
 shipyard "cheater: everything base"
 	"'nra'ret"
 	"'olofez"

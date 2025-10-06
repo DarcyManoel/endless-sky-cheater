@@ -1,3 +1,4 @@
+#	this text was generated using endless-sky-generator on github
 outfitter "cheater: everything"
 	"A120 Atomic Thruster"
 	"A125 Atomic Steering"
