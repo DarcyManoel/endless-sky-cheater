@@ -1,0 +1,92 @@
+outfit "cheater: cloak"
+	"display name" "Perfect Cloak"
+	category "Cheats"
+	unplunderable
+	cloak 1
+	"cloak phasing" 1
+	"cloaked communication" 1
+	"cloaked afterburner" 1
+	"cloaked boarding" 1
+	"cloaked deployment" 1
+	"cloaked pickup" 1
+	"cloaked scanning" 1
+outfit "cheater: protection"
+	"display name" "Perfect Protection"
+	category "Cheats"
+	unplunderable
+	shields 9e18
+	"shield generation" 9e18
+	hull 9e18
+	"hull repair rate" 9e18
+	"absolute threshold" 0
+	inscrutable 1
+	"disruption resistance" 9e18
+	"ion resistance" 9e18
+	"scramble resistance" 9e18
+	"slowing resistance" 9e18
+	"discharge resistance" 9e18
+	"corrosion resistance" 9e18
+	"leak resistance" 9e18
+	"burn resistance" 9e18
+	"piercing resistance" 1
+	"disruption protection" 9e18
+	"energy protection" 9e18
+	"force protection" 9e18
+	"fuel protection" 9e18
+	"heat protection" 9e18
+	"hull protection" 9e18
+	"ion protection" 9e18
+	"scramble protection" 9e18
+	"piercing protection" 9e18
+	"shield protection" 9e18
+	"slowing protection" 9e18
+	"discharge protection" 9e18
+	"corrosion protection" 9e18
+	"leak protection" 9e18
+	"burn protection" 9e18
+outfit "cheater: resources"
+	"display name" "Unlimited Resources"
+	category "Cheats"
+	unplunderable
+	"energy generation" 15e16
+	"energy capacity" 9e18
+	"heat capacity" 9e18
+	"fuel capacity" 9e18
+	"fuel generation" 15e16
+outfit "cheater: scanning"
+	"display name" "Perfect Scanning"
+	category "Cheats"
+	unplunderable
+	"cargo scan power" 9e18
+	"cargo scan efficiency" 9e18
+	"outfit scan power" 9e18
+	"outfit scan efficiency" 9e18
+	"tactical scan power" 9e18
+	"cloaked scanning" 1
+outfit "cheater: space"
+	"display name" "Unlimited Space"
+	category "Cheats"
+	unplunderable
+	"cargo space" 2e9
+	"outfit space" 9e18
+	"weapon capacity" 9e18
+	"engine capacity" 9e18
+	"spinal mount" 9e18
+	"magnetic nozzle" 9e18
+	"drill port" 9e18
+	"drill spar" 9e18
+outfit "cheater: travel"
+	"display name" "Perfect Travel"
+	category "Cheats"
+	unplunderable
+	mass 9e18
+	drag 15e16
+	thrust 15e17
+	turn 18e18
+	"jump drive" 1
+	"jump speed" 9e18
+	"jump fuel" 1
+	"jump range" 9e18
+	"landing speed" .99
+	"quantum keystone" 1
+	gaslining 1

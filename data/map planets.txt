@@ -6,6 +6,7 @@ planet "cheater: shop"
 		recharges all
 		services all
 	bribe 0
+	outfitter "cheater: cheats"
 	outfitter "cheater: everything"
 	shipyard "cheater: everything base"
 planet "cheater: wormhole"
