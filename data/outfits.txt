@@ -90,7 +90,7 @@ outfit "cheater: targeted disabler"
 		"turret turn" 360
 		reload 1
 		lifetime 1
-		velocity 9e18
+		velocity 450000
 		phasing
 		piercing 1
 		"no asteroid collisions"
@@ -107,7 +107,7 @@ outfit "cheater: targeted killer"
 		"turret turn" 360
 		reload 1
 		lifetime 1
-		velocity 9e18
+		velocity 450000
 		phasing
 		piercing 1
 		"no asteroid collisions"
