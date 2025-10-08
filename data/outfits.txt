@@ -50,7 +50,7 @@ outfit "cheater: protection"
 	"corrosion protection" 9e18
 	"leak protection" 9e18
 	"burn protection" 9e18
-outfit "cheater: resources"
+outfit "cheater: resource"
 	"display name" "Unlimited Resources"
 	category "Cheats"
 	unplunderable 1
