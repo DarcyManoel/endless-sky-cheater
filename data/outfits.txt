@@ -77,10 +77,27 @@ outfit "cheater: space"
 	"outfit space" 9e18
 	"weapon capacity" 9e18
 	"engine capacity" 9e18
+	#	custom attributes
 	"spinal mount" 9e18
 	"magnetic nozzle" 9e18
 	"drill port" 9e18
 	"drill spar" 9e18
+	"asteroid mount" 9e18
+	"asteroid mount 2" 9e18
+	"asteroid mount 3" 9e18
+	"asteroid mount 4" 9e18
+	"asteroid mount small" 9e18
+	"asteroid mount am" 9e18
+	"asteroid mount jd" 9e18
+	"crystal projector" 9e18
+	"shooting star" 9e18
+	"anchor point" 9e18
+	"shield connection point" 9e18
+	"multimodal armor" 9e18
+	"relay upgrades" 9e18
+	"nanite upgrades" 9e18
+	"reactor upgrades" 9e18
+	"solar cell" 9e18
 outfit "cheater: travel"
 	"display name" "Perfect Travel"
 	category "Cheats"
