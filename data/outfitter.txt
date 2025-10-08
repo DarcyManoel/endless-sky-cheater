@@ -1,4 +1,5 @@
 outfitter "cheater: cheats"
+	"cheater: boarding"
 	"cheater: cloak"
 	"cheater: protection"
 	"cheater: resources"

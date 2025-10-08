@@ -1,3 +1,9 @@
+outfit "cheater: boarding"
+	"display name" "Perfect Boarding"
+	category "Cheats"
+	unplunderable
+	"capture attack" 9e18
+	"capture defense" 9e18
 outfit "cheater: cloak"
 	"display name" "Perfect Cloak"
 	category "Cheats"
