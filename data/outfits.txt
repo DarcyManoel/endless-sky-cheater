@@ -81,39 +81,6 @@ outfit "cheater: space"
 	"magnetic nozzle" 9e18
 	"drill port" 9e18
 	"drill spar" 9e18
-outfit "cheater: targeted disabler"
-	"display name" "Targeted Disabler"
-	category "Cheats"
-	unplunderable 1
-	"turret mounts" -1
-	weapon
-		"turret turn" 360
-		reload 1
-		lifetime 1
-		velocity 450000
-		phasing
-		piercing 1
-		"no asteroid collisions"
-		"no minable collisions"
-		"relative shield damage" 1
-		"relative hull damage" .99
-		"relative disabled damage" 0
-outfit "cheater: targeted killer"
-	"display name" "Targeted Killer"
-	category "Cheats"
-	unplunderable 1
-	"turret mounts" -1
-	weapon
-		"turret turn" 360
-		reload 1
-		lifetime 1
-		velocity 450000
-		phasing
-		piercing 1
-		"no asteroid collisions"
-		"no minable collisions"
-		"relative shield damage" 1
-		"relative hull damage" 1
 outfit "cheater: travel"
 	"display name" "Perfect Travel"
 	category "Cheats"
