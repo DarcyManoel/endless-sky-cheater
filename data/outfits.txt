@@ -1,13 +1,13 @@
 outfit "cheater: boarding"
 	"display name" "Perfect Boarding"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"capture attack" 9e18
 	"capture defense" 9e18
 outfit "cheater: cloak"
 	"display name" "Perfect Cloak"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	cloak 1
 	"cloak phasing" 1
 	"cloaked communication" 1
@@ -19,7 +19,7 @@ outfit "cheater: cloak"
 outfit "cheater: protection"
 	"display name" "Perfect Protection"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	shields 9e18
 	"shield generation" 9e18
 	hull 9e18
@@ -53,7 +53,7 @@ outfit "cheater: protection"
 outfit "cheater: resources"
 	"display name" "Unlimited Resources"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"energy generation" 15e16
 	"energy capacity" 9e18
 	"heat capacity" 9e18
@@ -62,7 +62,7 @@ outfit "cheater: resources"
 outfit "cheater: scanning"
 	"display name" "Perfect Scanning"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"cargo scan power" 9e18
 	"cargo scan efficiency" 9e18
 	"outfit scan power" 9e18
@@ -72,7 +72,7 @@ outfit "cheater: scanning"
 outfit "cheater: space"
 	"display name" "Unlimited Space"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"cargo space" 2e9
 	"outfit space" 9e18
 	"weapon capacity" 9e18
@@ -84,7 +84,7 @@ outfit "cheater: space"
 outfit "cheater: targeted disabler"
 	"display name" "Targeted Disabler"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"turret mounts" -1
 	weapon
 		"turret turn" 360
@@ -101,7 +101,7 @@ outfit "cheater: targeted disabler"
 outfit "cheater: targeted killer"
 	"display name" "Targeted Killer"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	"turret mounts" -1
 	weapon
 		"turret turn" 360
@@ -117,7 +117,7 @@ outfit "cheater: targeted killer"
 outfit "cheater: travel"
 	"display name" "Perfect Travel"
 	category "Cheats"
-	unplunderable
+	unplunderable 1
 	mass 9e18
 	drag 15e16
 	thrust 15e17
