@@ -38,15 +38,6 @@ mission "cheater: startup"
 						has "cheater: reveal shrouded systems"
 					goto "shroudedHide"
 				#---------------------------------------------------
-				"	(Enable ship variants in shop.)"
-					to display
-						not "cheater: ship variants in shop"
-					goto "variantsEnable"
-				"	(Disable ship variants in shop.)"
-					to display
-						has "cheater: ship variants in shop"
-					goto "variantsDisable"
-				#---------------------------------------------------
 				"	(Exit.)"
 					decline
 			#---------------------------------------------------
@@ -77,19 +68,6 @@ mission "cheater: startup"
 			action
 				clear "cheater: reveal shrouded systems"
 				event "cheater: hide shrouded systems"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			#---------------------------------------------------
-			label "variantsEnable"
-			action
-				set "cheater: ship variants in shop"
-				event "cheater: variantsEnable"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			label "variantsDisable"
-			action
-				clear "cheater: ship variants in shop"
-				event "cheater: variantsDisable"
 			"These are utilities for the Cheater plugin."
 				goto "start"
 			#---------------------------------------------------
@@ -125,15 +103,6 @@ mission "cheater: utilities"
 						has "cheater: reveal shrouded systems"
 					goto "shroudedHide"
 				#---------------------------------------------------
-				"	(Enable ship variants in shop.)"
-					to display
-						not "cheater: ship variants in shop"
-					goto "variantsEnable"
-				"	(Disable ship variants in shop.)"
-					to display
-						has "cheater: ship variants in shop"
-					goto "variantsDisable"
-				#---------------------------------------------------
 				"	(Exit.)"
 					launch
 			#---------------------------------------------------
@@ -167,28 +136,8 @@ mission "cheater: utilities"
 			"These are utilities for the Cheater plugin."
 				goto "start"
 			#---------------------------------------------------
-			label "variantsEnable"
-			action
-				set "cheater: ship variants in shop"
-				event "cheater: variantsEnable"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			label "variantsDisable"
-			action
-				clear "cheater: ship variants in shop"
-				event "cheater: variantsDisable"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			#---------------------------------------------------
 	on daily
 		fail
-#---------------------------------------------------
-event "cheater: variantsEnable"
-	planet "cheater: shop"
-		add shipyard "cheater: everything variant"
-event "cheater: variantsDisable"
-	planet "cheater: shop"
-		remove shipyard "cheater: everything variant"
 #---------------------------------------------------
 event "cheater: reveal shrouded systems"
 	system "Ar-40"

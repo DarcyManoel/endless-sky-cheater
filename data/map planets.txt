@@ -8,7 +8,7 @@ planet "cheater: shop"
 	bribe 0
 	outfitter "cheater: cheats"
 	outfitter "cheater: everything"
-	shipyard "cheater: everything base"
+	shipyard "cheater: everything"
 planet "cheater: wormhole"
 	wormhole "cheater: wormhole"
 wormhole "cheater: wormhole"
