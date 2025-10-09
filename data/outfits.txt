@@ -51,7 +51,7 @@ outfit "cheater: protection"
 	"leak protection" 9e18
 	"burn protection" 9e18
 outfit "cheater: resource"
-	"display name" "Unlimited Resources"
+	"display name" "Unlimited Resource"
 	category "Cheats"
 	unplunderable 1
 	"energy generation" 15e16
