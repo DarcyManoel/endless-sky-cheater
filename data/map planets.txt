@@ -1,10 +1,30 @@
 planet "cheater: shop"
 	"display name" "Shop"
 	landscape "land/galaxy"
-	description ""
-	port " "
+	description "A consolidated access point for every ship and outfit in the game. Use it to assemble test builds, compare designs, or equip anything instantly. No restrictions, no requirements."
+	port "Cheats"
 		recharges all
 		services all
+		description "The cheat menu can unfortunately only be opened once per visit. If you would like to access the cheat menu again, please depart and land again."
+		description "These cheats are currently active:"
+			to display
+				or
+					"credits" > 9e17
+					has "cheater: map revealed"
+					has "cheater: reveal shrouded systems"
+		#---------------------------------------------------
+		description "	- Maximum credits given."
+			to display
+				"credits" > 9e17
+		#---------------------------------------------------
+		description "	- Map revealed."
+			to display
+				has "cheater: map revealed"
+		#---------------------------------------------------
+		description "	- Unshrouded systems."
+			to display
+				has "cheater: reveal shrouded systems"
+		#---------------------------------------------------
 	bribe 0
 	outfitter "cheater: cheats"
 	outfitter "cheater: everything"

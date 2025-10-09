@@ -1,13 +1,14 @@
-mission "cheater: startup"
-	landing
+mission "cheater: cheats"
 	"offer precedence" 1
+	repeat
+	invisible
+	source
+		government "Cheater"
 	on offer
 		conversation
-			"Woah! Did you know you have the Cheater plugin enabled?"
+			"These are the available cheat events."
 			label "start"
-			"	For as long as you have this plugin enabled, you will have access to the cheater system whether you decide to use it or not."
-			"	Lucky for you, this plugin is made to be unobtrusive to ordinary gameplay while still being quite a powerful tool. That means you can use it when you want to, and ignore it when you don't."
-			"	This is your opportunity to choose how present the Cheater plugin should be in this save."
+			"These cheats are currently active:"
 			#---------------------------------------------------
 			"	- Maximum credits given."
 				to display
@@ -16,6 +17,10 @@ mission "cheater: startup"
 			"	- Map revealed."
 				to display
 					has "cheater: map revealed"
+			#---------------------------------------------------
+			"	- Unshrouded systems."
+				to display
+					has "cheater: reveal shrouded systems"
 			#---------------------------------------------------
 			choice
 				#---------------------------------------------------
@@ -46,7 +51,7 @@ mission "cheater: startup"
 				payment -9e18
 			action
 				payment 9e18
-			"These are utilities for the Cheater plugin."
+			"These are the available cheat events."
 				goto "start"
 			#---------------------------------------------------
 			label "revealMap"
@@ -55,89 +60,22 @@ mission "cheater: startup"
 				event "cheater: reveal vanilla labels"
 				event "cheater: reveal vanilla systems"
 				event "cheater: reveal vanilla wormholes"
-			"These are utilities for the Cheater plugin."
+			"These are the available cheat events."
 				goto "start"
 			#---------------------------------------------------
 			label "shroudedReveal"
 			action
 				set "cheater: reveal shrouded systems"
 				event "cheater: reveal shrouded systems"
-			"These are utilities for the Cheater plugin."
+			"These are the available cheat events."
 				goto "start"
 			label "shroudedHide"
 			action
 				clear "cheater: reveal shrouded systems"
 				event "cheater: hide shrouded systems"
-			"These are utilities for the Cheater plugin."
+			"These are the available cheat events."
 				goto "start"
 			#---------------------------------------------------
-mission "cheater: utilities"
-	name "Cheater Utilities"
-	description "Accept this 'job' to open a utilities menu for the Cheater plugin."
-	color unselected "governments: Quarg"
-	color selected "governments: Quarg"
-	job
-	repeat
-	on accept
-		conversation
-			"These are utilities for the Cheater plugin."
-			label "start"
-			choice
-				#---------------------------------------------------
-				"	(Give maximum credits.)"
-					to display
-						"credits" < 9e17
-					goto "maximumCredits"
-				#---------------------------------------------------
-				"	(Reveal map.)"
-					to display
-						not "cheater: map revealed"
-					goto "revealMap"
-				#---------------------------------------------------
-				"	(Reveal shrouded systems.)"
-					to display
-						not "cheater: reveal shrouded systems"
-					goto "shroudedReveal"
-				"	(Hide shrouded systems.)"
-					to display
-						has "cheater: reveal shrouded systems"
-					goto "shroudedHide"
-				#---------------------------------------------------
-				"	(Exit.)"
-					launch
-			#---------------------------------------------------
-			label "maximumCredits"
-			action
-				payment -9e18
-			action
-				payment 9e18
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			#---------------------------------------------------
-			label "revealMap"
-			action
-				set "cheater: map revealed"
-				event "cheater: reveal vanilla labels"
-				event "cheater: reveal vanilla systems"
-				event "cheater: reveal vanilla wormholes"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			#---------------------------------------------------
-			label "shroudedReveal"
-			action
-				set "cheater: reveal shrouded systems"
-				event "cheater: reveal shrouded systems"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			label "shroudedHide"
-			action
-				clear "cheater: reveal shrouded systems"
-				event "cheater: hide shrouded systems"
-			"These are utilities for the Cheater plugin."
-				goto "start"
-			#---------------------------------------------------
-	on daily
-		fail
 #---------------------------------------------------
 event "cheater: reveal shrouded systems"
 	system "Ar-40"
