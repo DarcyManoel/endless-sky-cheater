@@ -275,3 +275,15 @@ event "cheater: reveal vanilla wormholes"
 	#"visit planet" "Wormhole Barren Beta"	#	invalid planet error
 	"visit planet" "Wormhole Link"
 #---------------------------------------------------
+mission "cheater: damselflyman"
+	name "Become Damselflyman?"
+	description "Do you want to be the Damselflyman?"
+	job
+	repeat
+	source
+		government "Cheater"
+	to offer
+		not "outfit (all): Damselflyman"
+	on offer
+		outfit "Damselflyman" 1
+		fail
