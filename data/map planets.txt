@@ -11,7 +11,7 @@ planet "cheater: shop"
 				or
 					"credits" > 9e17
 					has "cheater: map revealed"
-					has "cheater: reveal shrouded systems"
+					has "cheater: systems unshrouded"
 		#---------------------------------------------------
 		description "	- Maximum credits given."
 			to display
@@ -23,7 +23,7 @@ planet "cheater: shop"
 		#---------------------------------------------------
 		description "	- Unshrouded systems."
 			to display
-				has "cheater: reveal shrouded systems"
+				has "cheater: systems unshrouded"
 		#---------------------------------------------------
 	bribe 0
 	outfitter "cheater: cheats"
