@@ -1,4 +1,4 @@
-#	this text was generated using endless-sky-generator on github
+#	this text was generated using endless-sky-scripts on github
 event "cheater: reveal vanilla systems"
 	visit "1 Axis"
 	visit "10 Pole"
